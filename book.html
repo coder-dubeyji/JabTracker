@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Vaccination Portal</title>
+    <link href="stylesheet" rel="style.css">
+    <style>
+	body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+	* {
+            box-sizing: border-box;
+        }
+	header {
+            text-align: center;
+            padding: 30px 20px 10px;
+        }
+	h1 {
+            margin-bottom: 10px;
+        }
+	h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+	h3 {
+            margin-top: 15px;
+            color: #555;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+	.form-section {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+	.form-section h2 {
+            margin-bottom: 20px;
+        }
+	label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+	input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+	       button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+	footer {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: #777;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vaccination Registration</h1>
+        <p>Stay protected, stay informed 🩺</p>
+    </header>
+
+    <!-- Registration Form -->
+    <div class="form-section" id="register">
+        <h2>📋 Register for Vaccination</h2>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="vaccine">Select Vaccine:</label>
+            <select id="vaccine" name="vaccine" required>
+                <option value="">--Choose--</option>
+                <option value="">COVID-19</option>
+                <option value="">Hepatitis B</option>
+                <option value="">Polio</option>
+                <option value="">MMR</option>
+                <option value="">Tetanus (TT)</option>
+            </select>
+
+            <label for="date">Preferred Vaccination Date:</label>
+            <input type="date" id="date" name="date" required>
+
+             <label for="location">Clinic/Hospital:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+         <p id="booking-msg"></p>
+
+  <script type="module" src="book.js"></script>
+    </div>
+    <footer>
+        Made with ❤️ by Hack Street Boys | Vaccine Tracker Initiative
+    </footer>
+
+</body>
+</html>
